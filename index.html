@@ -1,0 +1,74 @@
+<!--
+Version 2.0 - 2-Feb-2019
+This is a blank page to render a game using the jsLib and game.js files
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dog Game</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="main.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="container">
+			<div id="data">
+				<h1>smeel like updog</h1>
+				<section id="feedback">
+					<h1>Score: <span id="score"></span></h1>
+					<h1>Lives: <span id="lives"></span></h1>
+					<h1>Bones: <span id="bonedisplay"></span></h1>
+				</section>
+				<section id="controls">
+					<p id="center"></p>
+					<p id="pos"></p>
+					<p id="angle"></p>
+					<p id="other"></p>
+					<p id="hpdisplay"></p>
+					<input type="text" id='field'>
+				</section>
+			</div>
+
+      		<div id="game">
+				<button onclick="changegoddog()" class='dogbuttons' id='goddog'></button>
+				<button class='menubuttons' id='gamestartbutton'>Play Game</button>
+				<button class='menubuttons' id='musicbutton'>Music</button>
+				<button onclick="changedog('boxer');dogimage('boxer');dogstats('boxer')" class='dogbuttons' id='boxer'></button>
+				<button onclick="changedog('husky');dogimage('husky');dogstats('husky')" class='dogbuttons' id='husky'></button>
+				<button onclick="changedog('pug');dogimage('pug');dogstats('pug')" class='dogbuttons' id='pug'></button>
+				<button onclick="hidedogbtns();hidecontbtn()"id='dogselectbtn'>Continue</button>
+				<img class="boxerstats heartimg" id="heart1" src="Images/3heart.png">
+				<img class="huskystats heartimg" id="heart2" src="Images/2heart.png">
+				<img class="pugstats heartimg" id="heart3" src="Images/1heart.png">
+				<img class="boxerstats speedimg" id="speed1" src="Images/1speed.png">
+				<img class="huskystats speedimg" id="speed2" src="Images/2speed.png">
+				<img class="pugstats speedimg" id="speed3" src="Images/3speed.png">
+        	  <canvas id="game_canvas" width="1024" height="768">
+        	  </canvas>
+      		</div>
+		</div>
+    <div id="sounds">
+			<!--
+            <audio id="highway" preload="auto">
+                <source src="audio/highway.mp3" type="audio/mp3">
+            </audio>
+            <audio id="whine" preload="auto">
+                <source src="audio/whine.wav" type="audio/wav">
+            </audio>
+            <audio id="bark" preload="auto">
+                <source src="audio/bark.wav" type="audio/wav">
+            </audio>
+            -->
+    </div>
+
+	<script src="jsLib/resources.js"></script>
+    <script src="jsLib/input.js"></script>
+    <script src="jsLib/sprite.js"></script>
+    <script src="jsLib/gameUtils.js"></script>
+
+	<script src="init.js"></script>
+	<script src="update.js"></script>
+	<script src="input.js"></script>
+    <script src="functions.js"></script>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#container{
+	width: 1366px;
+	overflow: hidden;
+}
+h1{
+	height: 50px;
+	margin-bottom: 20px;
+}
+section{
+	width: 300px;
+	border: 1px black solid;
+	height: 50%;
+}
+canvas{
+	background-color: lightgray;
+}
+#game{
+	margin: auto;
+	float: left;
+	position: relative;
+}
+#data{
+	overflow: hidden;
+	float: right;
+}
+#gamestartbutton{
+	margin: 150px 0 0 337px;
+}
+#musicbutton{
+	margin: 270px 0 0 337px;
+}
+.menubuttons{
+	font-size: 35px;
+	font-family: verdana;
+	color: white;
+	height: 100px;
+	width: 350px;
+	background-color: #bf3794;
+	border-radius: 40px;
+	position: absolute;
+	z-index: 9999;
+	border: black solid 1px;
+}
+.dogbuttons {
+	background-color: transparent;
+	background-size: cover;
+	width: 160px;
+	height: 84px;
+	position: absolute;
+	z-index: 9999;
+	border: none;
+	margin-top: 430px;
+	cursor: pointer;
+}
+#boxer {
+	background-image: url("images/blackboxer.png");
+	margin-left: 136px;
+}
+#husky {
+	background-image: url("images/blackhusky.png");
+	margin-left: 432px;
+}
+#pug {
+	background-image: url("images/blackpug.png");
+	margin-left: 728px;
+}
+#pug:hover {
+	background-image: url("images/pug.png");
+}
+#boxer:hover {
+	background-image: url("images/boxer.png");
+}
+#husky:hover {
+	background-image: url("images/husky.png");
+}
+.dogbuttons:focus {
+	outline: 0;
+}
+#dogselectbtn {
+	margin-left: 755px;
+	margin-top: 670px;
+	font-size: 30px;
+	font-family: verdana;
+	color: white;
+	height: 80px;
+	width: 250px;
+	background-color: #bf3794;
+	border-radius: 40px;
+	position: absolute;
+	z-index: 9999;
+	border: black solid 1px;
+	display: none;
+}
+.speedimg {
+	position: absolute;
+	z-index: 9999;
+	margin-top: 600px;
+	height: 36px;
+	width: 114px;
+	display: none;
+}
+#speed1 {
+	margin-left: 160px;
+}
+#speed2 {
+	margin-left: 455px;
+}
+#speed3 {
+	margin-left: 750px;
+}
+.heartimg {
+	position: absolute;
+	z-index: 9999;
+	margin-top: 550px;
+	height: 36px;
+	width: 114px;
+	display: none;
+}
+#heart1 {
+	margin-left: 160px;
+}
+#heart2 {
+	margin-left: 455px;
+}
+#heart3 {
+	margin-left: 750px;
+}
+.boxerstats {
+	display: none;
+}
+.huskystats {
+	display: none;
+}
+.pugstats {
+	display: none;
+}
+#goddog {
+	margin: 200px 0 0 300px;
+	background-image: url('images/goddog.png');
+	width: 42px;
+	height: 108px;
+}
+.menubuttons:focus {
+	outline: 0;
+	cursor: pointer;
+}
